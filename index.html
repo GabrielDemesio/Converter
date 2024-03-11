@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Medidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containerMedidas">
+        <h1>Conversor de Medidas</h1>
+        <label for="tipoConversao">Selecione o tipo de conversão:</label>
+        <select id="tipoConversao" onchange="atualizarPlaceholder()">
+            <option value="quilometrosParaCentimetros">Quilômetros para Centímetros</option>
+            <option value="centimetrosParaQuilometros">Centímetros para Quilômetros</option>
+            <option value="metrosParaQuilometros">Metros para Quilometros</option>
+            <option value="kmParaMetros">Quilometros Para Metros</option>
+            <option value="grausParaFarenheit"> Celsius para Farenheit</option>
+            <option value="farenheitParaCelsius"> Ferenheit Para Celsius</option>
+        </select>
+        <label for="medida">Insira a medida:</label>
+        <input type="number" id="medida" placeholder="Insira a medida">
+        <button onclick="converter()">Converter</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
